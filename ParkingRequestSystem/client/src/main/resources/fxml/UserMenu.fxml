@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcn.sd.controllers.UserMenuController">
+   <children>
+      <Pane layoutX="-138.0" layoutY="-25.0" prefHeight="445.0" prefWidth="887.0">
+         <children>
+            <Button fx:id="viewRequestsButton" layoutX="444.0" layoutY="105.0" mnemonicParsing="false" onAction="#changeSceneToView" text="View Requests" />
+            <Button fx:id="createRequestButton" layoutX="444.0" layoutY="157.0" mnemonicParsing="false" onAction="#changeSceneToCreate" text="Create Request" />
+            <Button fx:id="updateRequestButton" layoutX="444.0" layoutY="210.0" mnemonicParsing="false" onAction="#changeSceneToUpdate" text="Update Request" />
+            <Button fx:id="deleteRequestButton" layoutX="444.0" layoutY="266.0" mnemonicParsing="false" onAction="#changeSceneToDelete" text="Delete Request" />
+            <Button fx:id="addCarButton" layoutX="466.0" layoutY="314.0" mnemonicParsing="false" onAction="#changeSceneToAddCar" text="Add Car" />
+            <Button fx:id="deleteCarButton" layoutX="466.0" layoutY="344.0" mnemonicParsing="false" onAction="#changeSceneToDeleteCar" text="Delete Car" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

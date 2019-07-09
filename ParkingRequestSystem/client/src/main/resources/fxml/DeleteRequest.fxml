@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="527.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcn.sd.controllers.DeleteRequestController">
+   <children>
+      <Button fx:id="deleteRequestButton" layoutX="63.0" layoutY="439.0" mnemonicParsing="false" onAction="#deleteRequest" text="Delete" />
+      <TableView fx:id="requestsTableView" layoutX="36.0" layoutY="31.0" prefHeight="200.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="requestId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="requestDate" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="requestState" prefWidth="75.0" text="state" />
+            <TableColumn fx:id="requestUsername" prefWidth="91.0" text="username" />
+            <TableColumn fx:id="requestCar" prefWidth="81.0" text="car" />
+            <TableColumn fx:id="requestParkingLot" prefWidth="100.0" text="parking lot" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

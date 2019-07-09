@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.5.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'ro.utcn'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.springframework.boot:spring-boot-starter-mail'
+    compile 'org.springframework.boot:spring-boot-starter-security'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    
+	compile group: 'org.springframework', name: 'org.springframework.web.servlet', version: '3.0.5.RELEASE'
+    
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.4'
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5'
+	compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
+	runtimeOnly 'mysql:mysql-connector-java'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	 testCompile 'org.springframework.security:spring-security-test'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+	testCompile group: 'junit', name: 'junit'
+}

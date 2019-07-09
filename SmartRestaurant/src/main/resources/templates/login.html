@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Smart Restaurant login</title>
+<link href="../static/css/bootstrap.min.css" rel="stylesheet"
+	media="screen" th:href="@{css/bootstrap.min.css}" />
+<link href="../static/css/core.css" rel="stylesheet" media="screen"
+	th:href="@{css/core.css}" />
+</head>
+<body>
+<div th:replace="common/header::navbar"></div>
+	<h2>Login Page</h2>
+
+	<form th:action="@{/login}" method="post">
+		<label for="username">Username</label>: <input type="text"
+			id="username" name="username" autofocus="autofocus" /> <label
+			for="password">Password</label>: <input type="password" id="password"
+			name="password" /><input type="submit" value="Log in as USER" />
+	</form>
+	<form th:action="@{/loginAsAdmin}" method="post">
+		<label for="username">Admin name</label>: <input type="text"
+			id="username" name="username" autofocus="autofocus" /> <label
+			for="password">Admin password</label>: <input type="password" id="password"
+			name="password" /><input type="submit" value="Log in as ADMIN" />
+	</form>
+	<footer th:insert="~{common/footer :: footer}"></footer>
+</body>
+</html>

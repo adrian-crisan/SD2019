@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="603.0" prefWidth="873.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ro.utcn.sd.controllers.ViewRequestsByParkingLotController">
+   <children>
+      <Pane layoutX="-104.0" layoutY="-238.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="reqTableView" layoutX="96.0" layoutY="44.0" prefHeight="200.0" prefWidth="453.0">
+        <columns>
+          <TableColumn fx:id="requestId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="requestDate" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="requestState" prefWidth="75.0" text="state" />
+            <TableColumn fx:id="requestUsername" prefWidth="75.0" text="username" />
+            <TableColumn fx:id="requestCar" prefWidth="75.0" text="car" />
+            <TableColumn fx:id="requestParkingLot" prefWidth="75.0" text="parkingLot" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewReqButton" layoutX="96.0" layoutY="325.0" mnemonicParsing="false" text="View Requests" />
+      <TextField fx:id="parkingLotTextField" layoutX="239.0" layoutY="325.0" />
+   </children>
+</AnchorPane>

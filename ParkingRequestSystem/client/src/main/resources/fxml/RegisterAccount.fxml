@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="654.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ro.utcn.sd.controllers.RegisterAccountController">
+   <children>
+      <TextField editable="false" layoutX="57.0" layoutY="78.0" prefHeight="25.0" prefWidth="77.0" text="Username" />
+      <TextField fx:id="usernameTextField" layoutX="197.0" layoutY="78.0" />
+      <TextField editable="false" layoutX="60.0" layoutY="130.0" prefHeight="25.0" prefWidth="77.0" text="Password" />
+      <TextField fx:id="passwordTextField" layoutX="197.0" layoutY="130.0" />
+      <TextField editable="false" layoutX="60.0" layoutY="181.0" prefHeight="25.0" prefWidth="77.0" text="E-mail" />
+      <TextField fx:id="emailTextField" layoutX="197.0" layoutY="181.0" />
+      <TextField layoutX="60.0" layoutY="235.0" prefHeight="25.0" prefWidth="77.0" text="Name" />
+      <TextField fx:id="nameTextField" layoutX="197.0" layoutY="235.0" />
+      <Button fx:id="createAccountButton" layoutX="70.0" layoutY="371.0" mnemonicParsing="false" onAction="#createAccount" text="Create Account" />
+      <Button fx:id="backButton" layoutX="70.0" layoutY="421.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="527.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.utcn.sd.controllers.UpdateRequestController">
+   <children>
+      <TextArea layoutX="36.0" layoutY="330.0" minHeight="-Infinity" prefHeight="33.0" prefWidth="110.0" text="New Car VIN&#10;" />
+      <TextField fx:id="newCarVinTextField" layoutX="213.0" layoutY="334.0" />
+      <TextArea layoutX="35.0" layoutY="388.0" minHeight="-Infinity" prefHeight="33.0" prefWidth="121.0" text="New Parking Lot&#10;&#10;" />
+      <TextField fx:id="newParkingLotTextField" layoutX="213.0" layoutY="392.0" />
+      <Button fx:id="updateRequestButton" layoutX="63.0" layoutY="439.0" mnemonicParsing="false" onAction="#updateRequest" text="Update" />
+      <TableView fx:id="requestsTableView" layoutX="36.0" layoutY="31.0" prefHeight="200.0" prefWidth="498.0">
+        <columns>
+          <TableColumn fx:id="requestId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="requestDate" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="requestState" prefWidth="75.0" text="state" />
+            <TableColumn fx:id="requestUsername" prefWidth="91.0" text="username" />
+            <TableColumn fx:id="requestCar" prefWidth="81.0" text="car" />
+            <TableColumn fx:id="requestParkingLot" prefWidth="100.0" text="parking lot" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

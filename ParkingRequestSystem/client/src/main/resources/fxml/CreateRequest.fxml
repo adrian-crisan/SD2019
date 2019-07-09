@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="601.0" prefWidth="792.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ro.utcn.sd.controllers.CreateRequestController">
+   <children>
+      <Pane layoutX="-240.0" layoutY="-169.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea editable="false" layoutX="46.0" layoutY="67.0" minHeight="-Infinity" prefHeight="29.0" prefWidth="73.0" text="Username" />
+      <TextField fx:id="usernameTextField" layoutX="153.0" layoutY="69.0" />
+      <TextArea editable="false" layoutX="46.0" layoutY="118.0" minHeight="-Infinity" prefHeight="29.0" prefWidth="73.0" text="Car VIN" />
+      <TextField fx:id="carTextField" layoutX="153.0" layoutY="120.0" />
+      <TextArea editable="false" layoutX="46.0" layoutY="166.0" minHeight="-Infinity" prefHeight="29.0" prefWidth="79.0" text="Parking Lot" />
+      <TextField fx:id="parkingLotTextField" layoutX="153.0" layoutY="168.0" />
+      <Button fx:id="createRequestButton" layoutX="60.0" layoutY="257.0" mnemonicParsing="false" onAction="#createRequest" text="Create Request" />
+      <Button fx:id="backButton" layoutX="60.0" layoutY="312.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>
